@@ -19,11 +19,6 @@ repos:
     - --preserve-quotes
     - --indent=2
 
--   repo: https://gitlab.com/pycqa/flake8
-    rev: 3.7.9
-    hooks:
-    -   id: flake8
-
 - repo: local
   hooks:
   - id: isort
@@ -37,5 +32,3 @@ repos:
     entry: poetry --directory ./ run black
     language: system
     types: [python]
-
-
